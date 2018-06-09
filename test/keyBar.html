@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        (function(w){
+            let s = w.document;
+            let html = s.documentElement;
+            console.log(html);
+            let colWidth = html.clientWidth/10;
+            console.log(colWidth);
+            html.style.fontsize = colWidth + 'px';
+        })(window)
+    </script>
+    <style>
+        html {
+            font-size: 41.4px;
+            height: 100%;
+            width: 10rem;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #194855;
+        }
+        .box__hd {
+            font-size: 20px;
+            width: 10rem;
+            height: 240px;
+            line-height: 240px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .box__bd {
+            width: 492px;
+            height: 444px;
+            padding-left: 80px;
+        }
+        .box__num {
+            font-size: 20px;
+            float: left;
+            width: 1.61111111rem;
+            height: 1.61111111rem;
+            line-height: 1.61111111rem;
+            text-align: center;
+            border: 1px solid black;
+            /* background: red; */
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .box__num:nth-child(3n) {
+            margin-right: 118px;
+        }
+        .box__num:nth-child(3n+1) {
+            margin-right: 31px;
+        }
+        .box__num:nth-child(3n+2) {
+            margin-right: 31px;
+        }
+        .box__num:nth-child(10) {
+            margin-left: 97px;
+        }
+        .box__ft {
+            font-size: 20px;
+        }
+        .box__left {
+            position: fixed;
+            float: left;
+            bottom: 10px;
+        }
+        .box__right {
+            position: fixed;
+            float: right;
+            right: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box__hd">输入密码</div>
+    <div class="box__bd">
+        <div class="box__num">1</div>
+        <div class="box__num">2</div>
+        <div class="box__num">3</div>
+        <div class="box__num">4</div>
+        <div class="box__num">5</div>
+        <div class="box__num">6</div>
+        <div class="box__num">7</div>
+        <div class="box__num">8</div>
+        <div class="box__num">9</div>
+        <div class="box__num">0</div>
+    </div>
+    <div class="box__ft">
+        <div class="box__left">紧急呼叫</div>
+        <div class="box__right">取消</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: myfirst 5s infinite;
+        }
+        @keyframes myfirst{
+            0%{
+                background-color: red;
+                left:0;
+                top: 0;
+                transform: rotate(10deg);
+            }
+            25%{
+                background-color: yellow;
+                left: 100px;
+                top: 0;
+                transform: rotate(50deg);
+            }
+            50%{
+                background-color: blue;
+                left:100px;
+                top:100px; 
+                transform: scale(1.5) rotate(90deg);
+            }
+            75%{
+                background-color: pink;
+                left: 0;
+                top: 100px;
+                transform: skew(1.5,2);
+            }
+            100%{
+                background-color: red;
+                left: 0;
+                top: 0;
+                transform: translate(10);
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><strong>上山打老虎</strong></p>
+    <div></div>
+</body>
+</html>

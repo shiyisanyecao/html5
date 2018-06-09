@@ -1,0 +1,69 @@
+/*
+ *author ysw
+ *date 2018-4-25
+ */
+
+ .weui-tab {
+     position: relative;
+     height: 100%;
+ }
+ .weui-tabbar {
+     position: absolute;
+     z-index: 500;
+     bottom: 0;
+     width: 100%;
+     background-color: #f7f7f7;
+     display: -webkit-flex;
+     display: flex;
+     display: -webkit-box;
+ }
+
+ .weui-tabbar__item {
+     display: block;
+     -webkit-box-flex: 1;
+     flex: 1;
+     padding: 5px 0 0 5px;
+     text-align: center;
+     color: #808080;
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+ }
+ .tabbar .page__bd {
+     height: 100%;
+     padding: 0;
+     margin: 0;
+ }
+ /* 为什么tabbar的border 要用伪元素去做？
+ box-sizing border 是要占大小，
+ 44px android 55px */
+ .weui-tabbar:before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     right: 0;
+     height: 1px;
+     border-top: 1px solid #C0BFC4;
+     /* 1px问题 */
+     transform: scaleY(.5);
+     -webkit-transform: scaleY(.5);
+     -webkit-transform-origin: 0 0;
+     transform-origin: 0 0;
+ }
+
+ .weui-tabbar__icon {
+     /* 既不会像block那样，把兄弟元素挤下去
+     又不会像inline元素一样 设置不了宽高
+     设置狂傲并且不挤元素 */
+     display: inline-block;
+     width: 27px;
+     height: 27px;
+ }
+ .weui-tabbar__label {
+     text-align: center;
+     color: #808080;
+     font-size: 10px;
+     line-height: 1.8;
+ }
+ .weui-bar__item_on .weui-tabbar__label{
+    color: #09BB07;
+ }

@@ -1,0 +1,41 @@
+.main-header {
+    background-image: url(http://image.golaravel.com/5/c9/44e1c4e50d55159c65da6a41bc07e.jpg);
+}
+.container .row .col-xs-12 {
+    color:white;
+}
+.col-xs-12 {
+    padding-top: 30px;
+    text-align: center;
+}
+.col-xs-12.row {
+    padding: 40px;
+}
+.col-xs-12.row a {
+    border: 1px solid red;
+    color: white;
+    padding: 10px;
+}
+.col-xs-12.row a:hover {
+    background: #c25b5b;
+    text-decoration: none;
+}
+.col-xs-12.row a:active {
+    text-decoration: none;
+    background: #c25b5b;
+}
+.col-xs-12.row a:visited {
+    text-decoration: none;
+}
+.main {
+    padding: 18px;
+    text-align: center;
+}
+.main a {
+    font-size: 17px;
+    color: #181313;
+    padding: 10px;
+}
+.main a:hover {
+    text-decoration: none;
+}

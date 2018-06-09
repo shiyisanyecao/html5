@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.name{
+    margin: 40px;
+    width: 50px;
+    height: 70px;
+    border: 3px ridge blue; 
+    
+}
+.name__page{
+    
+    color: blue;
+    font-size: 24px;
+    font-family: Segoe Script;
+    font-weight: bolder;
+}

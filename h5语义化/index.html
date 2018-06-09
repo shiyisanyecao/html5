@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>使用bootstrap3 进行简单PC官网开发</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+        <!-- 1. container 网页的框架宽度 1170px
+        宽度是固定的， 左右自动居中。 
+        随时回到主体开发框架中
+        
+        2. row 
+        col 12列 bootstrap 栅格系统，网页布局
+        .col-xs-12  手机
+        .col-md-12  电脑
+        支持自适应的css框架
+        .md  电脑
+        .lg  大屏
+        .xs 手机
+        PC .xs  .md 都一样
+        手机访问   .md 不生效 -->
+        <header class="main-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>为WEB艺术家创造的PHP框架</h1>
+                    </div>
+                    <div class="col-xs-12 row">
+                        <a href="#">5.6文档</a>
+                        <a href="#">5.5文档</a>
+                        <a href="#">5.4文档</a>
+                        <a href="#">5.3文档</a>
+                        <a href="#">5.2文档</a>
+                        <a href="#">5.1文档</a>
+                        <a href="#">5.0文档</a>
+                        <a href="#">4.2文档</a>
+                        <a href="#">4.1文档</a>
+                        <a href="#">4.0文档</a>
+                        <a href="#">Lumen中文文档</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="main">
+                <div class="col-sm-12">
+                    <a href="#">首页</a>
+                    <a href="#">Laravel中文文档</a>
+                    <a href="#">Composer中文文档</a>
+                    <a href="#">PHP中文手册</a>
+                    <a href="#">PHP编程之道</a>
+                    <a href="#">问答社区</a>
+                </div>
+            </div>
+        </nav>
+        <section class="content">
+            <main class="col-md-8 contents">
+                <article class="post">
+                    <div class="post-head">
+                        <h1 class="post-title"><a href="#">Laravel 5.6 版本正式发布</a></h1>
+                        <div class="post-meta">
+                            <span class="author">作者：<a href="#">王赛</a></span>
+                        </div>
+                    </div>
+                </article>
+                <article class="post"></article>
+                <article class="post"></article>
+                <article class="post"></article>
+                <article class="post"></article>
+            </main>
+            <aside class="col-md-4 siderbar"></aside>
+        </section>
+</body>
+</html>
